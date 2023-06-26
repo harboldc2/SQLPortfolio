@@ -1,0 +1,11 @@
+Create table Rescue (id integer primary key, pet_name text, foster text, breed text, age interger, color text, sex text, adoption_fee money);
+Insert into Rescue (1, Otto, Celia Broome, pit mix, 1, black, male, $400 );
+Insert into Rescue (2, Shivers, Tammy Mason, Pit Mix, 3, Black and White, Male, $300);
+Insert into Rescue (3, Penny, Rachel Stempler, Pit Mix, 2, Choloclate and White, female, $400);
+Insert into Rescue (4, Melvin, Laura Spurlin, American Staffordshire, 2, Cream and Brown, Male, $350);
+Insert into Rescue (5, Salem, Wren Harbold, Jack Russel Mix, 2, Tricolor, Female, $400);
+Insert into Resuce (6, Teddy, Margaret Blaine, Lab Mix, 2, Black and White, Male, $425);
+Insert into Rescue (7, Tanner, Susan Jordan, Lab Mix, 3, Blonde, Male, $400);
+Insert into Rescue (8, Nova, Mary Broome, Pit Mix, 5, White and Black, Female $375);
+Insert into Rescue (9, Rocco, Michael Smith, Shepard Mix, 2, Tan, Male, $400);
+Insert into Rescue (10, Mona Lisa, Butch Harbold, Husky Mix, 1, Tricolor, Female, $300)
