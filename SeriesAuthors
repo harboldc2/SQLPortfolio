@@ -1,0 +1,44 @@
+Create table authors (id integer primary key, fullname text, series text);
+INSERT INTO authors values(1, "Sue Grafton", "alphabet series");
+INSERT INTO authors values(3, "J.K. Rowling", "Harry Potter");
+INSERT INTO authors values(4, "C.S. Lewis", "Chronicles of Narnia");
+Insert INTO authors values(2,"Tess Geritsen", "Rizzoli & Isles");
+Insert INTO authors values(5, "Diana Gabaldon", "Outlander");
+Insert into authors values(6, "JRR Tolkien", "Lord of the Rings");
+INSERT Into authors values(7, "Suzanne Collins", "Hunger Games");
+INSERT into authors values(8, "Stephen King", "The Dark Tower");
+INSERT into authors values(9, "Phillip Pullman", "His Dark Materials");
+INSERT into authors values(10, "Lee Child", "Jack Reacher");
+INSERT into authors values(11, "George R.R. Martin", "Game of Thrones");
+INSERT into authors values(12, "Ann Rice", "Vampire Chronicles");
+INSERT into authors values(13, "Veronica Roth", "Divergent");
+INSERT into authors values(14, "Sherryl Woods", "The Sweet Magnolia");
+Insert into authors values(15, "Dean Koontz", "Jane Hawk");
+
+Select * from authors;
+
+Create table series (id INTEGER primary key, series_name TEXT, book_in_series INTEGER);
+
+INSERT INTO series values(1, "alphabet series", 25);
+INSERT INTO series values(3, "Harry Potter", 7);
+INSERT INTO series values(4,"Chronicles of Narnia", 7); 
+Insert INTO series values(2,"Rizzoli & Isles", 16); 
+Insert INTO series values(5, "Outlander", 11);
+Insert into series values(6,"Lord of the Rings", 6);
+INSERT Into series values(7, "Hunger Games", 3);
+INSERT into series values(8, "The Dark Tower", 4);
+INSERT into series values(9, "His Dark Materials", 3);
+INSERT into series values(10,"Jack Reacher", 26);
+INSERT into series values(11, "Game of Thrones", 7);
+INSERT into series values(12, "Vampire Chronicles", 15);
+INSERT into series values(13, "Divergent", 4);
+INSERT into series values(14, "The Sweet Magnolia", 11);
+Insert into series values(15, "Jane Hawk", 5);
+
+Select authors.fullname, series.book_in_series from series    
+    Join authors
+    On authors.id=series.id;
+
+
+
+
